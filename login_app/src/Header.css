@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 15px;
+
+    .box {
+        width: 1450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2{
+            font-weight: 300;
+            font-size: 45px;
+        }
+        a{
+            color: black;
+            font-size: 25px;
+            font-weight: 400;
+        }
+    }
+
+}

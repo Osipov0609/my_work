@@ -1,0 +1,88 @@
+.login_app {
+    background: linear-gradient(135deg,
+            tan,
+        );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.login_app>.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative;
+    top: 50%;
+    left: 15%; */
+    padding: 35px;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0 0 1px gray, 0 0 1px gray, 0 0 15px #444;
+    animation: for_effect 1s linear;
+}
+
+@keyframes for_effect {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.login_app>.all>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+
+    input,
+    button {
+        padding: 9px 15px;
+        font-size: 21px;
+        border: 1px solid gray;
+        transition: border-color .3s, box-shadow .5s;
+    }
+
+    input {
+        padding-right: 175px;
+    }
+
+    input:focus {
+        border-color: bisque;
+        box-shadow: 0 0 5px beige;
+    }
+
+    button {
+        padding: 12px 15px;
+        background: tan;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+    }
+
+    button:active {
+        background: white;
+        color: slateblue;
+    }
+}
+
+.login_app>.all {
+    gap: 30px;
+
+    h3 {
+        color: bisque;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+        color: beige;
+    }
+}
